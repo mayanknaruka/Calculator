@@ -1,0 +1,21 @@
+function add(a,b) {
+    return a + b 
+}
+
+function subtract(a, b) {
+  return a - b;
+}
+
+function  mulitply(a , b) {
+    return a * b
+}
+
+function divide(a,b) {
+    return a/b 
+}
+
+let firstNumber = ""
+
+let operator = ""
+
+let secondNumber = ""
