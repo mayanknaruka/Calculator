@@ -19,3 +19,15 @@ let firstNumber = ""
 let operator = ""
 
 let secondNumber = ""
+
+function operate (firstNumber, operator, secondNumber) {
+    
+    if (operator === "+") {
+        return add(firstNumber, secondNumber)
+    }
+
+    else if (operator === "-"){
+        return subtract(firstNumber, secondNumber)
+
+    }
+}
