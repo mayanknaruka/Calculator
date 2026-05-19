@@ -1,5 +1,7 @@
 // Math Functions
 
+const res = require("express/lib/response");
+
 function add(a, b) {
     return a + b;
 }
@@ -58,6 +60,17 @@ function operate(operator, firstNumber, secondNumber) {
     }
 }
 
+function calculate(){
+
+    const result = operate(operator,
+        Number(firstNumber),
+        Number(secondNumber)
+    )
+    display.textContent = result
+    firstNumber = result
+    secondNumber = ""
+}
+
 
 // Number Buttons
 
@@ -91,6 +104,14 @@ numberButtons.forEach((button) => {
 operatorButtons.forEach((button) => {
 
     button.addEventListener("click", () => {
+
+        // If second number exists
+        // calculate first
+        if (secondNumber !== "") {
+
+            calculate();
+
+        }
 
         operator = button.textContent;
 
