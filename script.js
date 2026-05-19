@@ -30,4 +30,12 @@ function operate (firstNumber, operator, secondNumber) {
         return subtract(firstNumber, secondNumber)
 
     }
+    else if(operator === "*"){
+        return mulitply(firstNumber, secondNumber)
+    }
+
+    else if(operator === "/"){
+        return divide(firstNumber, secondNumber)
+    }
 }
+
